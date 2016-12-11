@@ -143,7 +143,7 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
 ********
 
-###这里要注意控件的赋值时机，一定不能在cell的layoutSubviews里，一定要在这个方法之前去赋值，哪怕是demo中重写cell  model中的set方法也可以
+###这里要注意控件的赋值时机，一定不能在cell的layoutSubviews里，一定要在这个方法之前去赋值，哪怕是像demo里重写cell中model的set方法也可以
 
 ```
 -(void)setModel:(ForumModel *)model{
