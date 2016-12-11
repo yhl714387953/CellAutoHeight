@@ -122,8 +122,6 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
 ![](image/13.png)
 
-我们把头像底部优先级降低，默认都是1000，我们降低到999看一下，冲突没有了，优先级低的约束是虚线显示的
-
 
 ![](image/14.png)
 
