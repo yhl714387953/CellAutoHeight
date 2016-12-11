@@ -132,9 +132,11 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 ![](image/15.png)
 
 当让给label的底部约束设置为大于等于10，如下图
+
 ![](image/16.png)
 
 我们看看效果
+
 ![](image/17.png)
 
 这里我们就实现了没有计算cell的高度让cell自适应了，如果我们设置内容label的行数为3呢，看下效果
