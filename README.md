@@ -75,7 +75,7 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 @property (nonatomic, copy)NSString* content;
 ```
 
-随便制造一个数据源显示到页面上，tableView线管代码如下
+随便制造一个数据源显示到页面上，tableView代码如下
 
 ```
 #pragma mark - Table view data source
