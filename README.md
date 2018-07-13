@@ -1,4 +1,4 @@
-#cell高度自适应，约束优先级对布局的影响
+## cell高度自适应，约束优先级对布局的影响
 ************
 **本文为了直观演示，所以用的xib添加约束，当然如果不喜欢xib，那么可以用代码去设置，效果是一样的。**
 
@@ -6,7 +6,7 @@
 
 PS:第一次接触到约束的概念是再大学的时候，学3D设计，位置约束、尺寸约束。我在xib里我也把约束分为这两种，当然个人理解，个人理解
 
-#####**大家都知道下面这个参数**#####
+##### 大家都知道下面这个参数 
 ```
 UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 ```
@@ -22,8 +22,8 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
 ***
 
-###我们挨个控件添加一下约束
-*****
+#### 我们挨个控件添加一下约束
+
 **头像imageView:**
 距离左、上10，宽高45
 
@@ -52,7 +52,7 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 **内容label:**
 上距离名字5，左侧跟名字对齐，右侧距离边界15，
 这里高度没去指定，那么默认会自动适应文字高度
-####**还需要一个约束去控制cell的高度 内容label的底部距离cell人bottom为10，这样就实现了cell高度的自适应了**
+**还需要一个约束去控制cell的高度 内容label的底部距离cell人bottom为10，这样就实现了cell高度的自适应了**
 ![](image/8.png)
 ![](image/9.png)
 ***
@@ -143,7 +143,7 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
 ********
 
-###这里要注意控件的赋值时机，一定不能在cell的layoutSubviews里，一定要在这个方法之前去赋值，哪怕是像demo里重写cell中model的set方法也可以
+##### 这里要注意控件的赋值时机，一定不能在cell的layoutSubviews里，一定要在这个方法之前去赋值，哪怕是像demo里重写cell中model的set方法也可以
 
 ```
 -(void)setModel:(ForumModel *)model{
@@ -155,7 +155,7 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
 ******
 
-####图文混排也可以用这样的方式去做，我还真这么干过，不过约束要百分百的一点差错不能有
+#### 图文混排也可以用这样的方式去做，我还真这么干过，不过约束要百分百的一点差错不能有
 
 感谢您阅读完毕，如有疑问，欢迎添加QQ:714387953(蜗牛上高速)。
 如果有错误，欢迎指正，一起切磋，共同进步
