@@ -168,7 +168,6 @@ UIKIT_EXTERN const CGFloat UITableViewAutomaticDimension NS_AVAILABLE_IOS(5_0);
 
 ******
 
-#### 图文混排也可以用这样的方式去做，我还真这么干过，不过约束要百分百的一点差错不能有
 
 感谢您阅读完毕，如有疑问，欢迎添加QQ:714387953(蜗牛上高速)。
 如果有错误，欢迎指正，一起切磋，共同进步
